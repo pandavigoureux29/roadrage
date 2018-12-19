@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 61d88dbf3223bfa4f99dffa1a603c462
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shoolgirl_0
+    21300002: shoolgirl_1
+    21300004: shoolgirl_2
+    21300006: shoolgirl_3
+    21300008: shoolgirl_4
+    21300010: shoolgirl_5
+    21300012: shoolgirl_6
+    21300014: shoolgirl_7
+    21300016: shoolgirl_8
+    21300018: shoolgirl_9
+    21300020: shoolgirl_10
+    21300022: shoolgirl_11
+    21300024: shoolgirl_12
+    21300026: shoolgirl_13
+    21300028: shoolgirl_14
+    21300030: shoolgirl_15
+    21300032: shoolgirl_16
+    21300034: shoolgirl_17
+    21300036: shoolgirl_18
+    21300038: shoolgirl_19
+    21300040: shoolgirl_20
+    21300042: shoolgirl_21
+    21300044: shoolgirl_22
+    21300046: shoolgirl_23
+    21300048: shoolgirl_24
+    21300050: shoolgirl_25
+    21300052: shoolgirl_26
+    21300054: shoolgirl_27
+    21300056: shoolgirl_28
+    21300058: shoolgirl_29
+    21300060: shoolgirl_30
+    21300062: shoolgirl_31
+    21300064: shoolgirl_32
+    21300066: shoolgirl_33
+    21300068: shoolgirl_34
+    21300070: shoolgirl_35
+    21300072: shoolgirl_36
+    21300074: shoolgirl_37
+    21300076: shoolgirl_38
+    21300078: shoolgirl_39
+    21300080: shoolgirl_40
+    21300082: shoolgirl_41
+    21300084: shoolgirl_42
+    21300086: shoolgirl_43
+    21300088: shoolgirl_44
+    21300090: shoolgirl_45
+    21300092: shoolgirl_46
+    21300094: shoolgirl_47
+    21300096: shoolgirl_48
+    21300098: shoolgirl_49
+    21300100: shoolgirl_50
+    21300102: shoolgirl_51
+    21300104: shoolgirl_52
+    21300106: shoolgirl_53
+    21300108: shoolgirl_54
+    21300110: shoolgirl_55
+    21300112: shoolgirl_56
+    21300114: shoolgirl_57
+    21300116: shoolgirl_58
+    21300118: shoolgirl_59
+    21300120: shoolgirl_60
+    21300122: shoolgirl_61
+    21300124: shoolgirl_62
+    21300126: shoolgirl_63
+    21300128: shoolgirl_64
+    21300130: shoolgirl_65
+    21300132: shoolgirl_66
+    21300134: shoolgirl_67
+    21300136: shoolgirl_68
+    21300138: shoolgirl_69
+    21300140: shoolgirl_70
+    21300142: shoolgirl_71
+    21300144: shoolgirl_72
+    21300146: shoolgirl_73
+    21300148: shoolgirl_74
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shoolgirl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490bea97ff9eb334684ef30ed54f5ed8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoolgirl_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51a9c8e33fe0b844a8813d8a2b70b6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoolgirl_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 40
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b6cc8527f586542b7d65ac88e87e4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoolgirl_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43dd3960fbf2f974990a0910cb4cc399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoolgirl_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dae1ef784c6164bbe38ed020234a2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoolgirl_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7369e39da30583648882325a67a86fff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: eb984c5746c4f094a9f3e29dd890bfce
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

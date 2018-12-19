@@ -14,7 +14,7 @@ public class Road : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         appliedOffset = renderer.material.mainTextureOffset;
-        Scroll(StartSpeed);
+        //Scroll(StartSpeed);
 	}
 	
 	// Update is called once per frame
