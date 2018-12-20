@@ -7,7 +7,9 @@ public class GameplayManager : MonoBehaviour {
 
     public List<EnemiesData> EnemiesDataList;
 
-    public List<EnemiesGenerator> Generators;
+    public List<SidesData> Sides;
+    public SidesData LeftSide {  get { return Sides[0]; } }
+    public SidesData RightSide {  get { return Sides[1]; } }
 
     public Road road;
 
@@ -17,7 +19,7 @@ public class GameplayManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         road.Scroll(Speed * RoadSpeedMultiplier);
-		Generators.First().Pop("schoolgirl", Speed);
+        StartCoroutine(PopCouroutine());
     }
 	
 	// Update is called once per frame
@@ -25,10 +27,27 @@ public class GameplayManager : MonoBehaviour {
 		
 	}
 
+    IEnumerator PopCouroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            LeftSide.Generator.Pop("schoolgirl", Speed);
+        }
+    }
+
     [System.Serializable]
     public class EnemiesData
     {
         public string Id;
         public GameObject Prefab;
+    }
+
+    [System.Serializable]
+    public class SidesData
+    {
+        public EnemiesGenerator Generator;
+        public GameObject Aim;
+        public Animation BlinkAnimation;
     }
 }

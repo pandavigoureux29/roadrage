@@ -9,86 +9,59 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1467572034602324}
+  m_RootGameObject: {fileID: 1547849727033948}
   m_IsPrefabAsset: 1
---- !u!1 &1467572034602324
+--- !u!1 &1547849727033948
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4608874296722622}
-  - component: {fileID: 114713103286158818}
+  - component: {fileID: 4030083930384762}
+  - component: {fileID: 212395621208204770}
+  - component: {fileID: 111479818878001250}
   m_Layer: 0
-  m_Name: Schoolgirl
+  m_Name: BlinkSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1855373945023102
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4937186760922682}
-  - component: {fileID: 212374772185438294}
-  m_Layer: 0
-  m_Name: SGSprite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4608874296722622
+--- !u!4 &4030083930384762
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1467572034602324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.30290562, y: -0.2771392, z: -0.083984375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4937186760922682}
+  m_GameObject: {fileID: 1547849727033948}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.061, y: 0, z: 0.26500148}
+  m_LocalScale: {x: 7.3641114, y: 18.903685, z: 1}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4937186760922682
-Transform:
+--- !u!111 &111479818878001250
+Animation:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1855373945023102}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4608874296722622}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114713103286158818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1467572034602324}
+  m_GameObject: {fileID: 1547849727033948}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7c90622732b554c995cb15a96e21ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpriteObject: {fileID: 1855373945023102}
-  CurrentState: 0
---- !u!212 &212374772185438294
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b0fb97d34ec3e944c85893bdbfd3d8c9, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b0fb97d34ec3e944c85893bdbfd3d8c9, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!212 &212395621208204770
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1855373945023102}
+  m_GameObject: {fileID: 1547849727033948}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -118,12 +91,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 61d88dbf3223bfa4f99dffa1a603c462, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 440fad460ceda2949b1d4940a4f8123e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.4, y: 0.4}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
