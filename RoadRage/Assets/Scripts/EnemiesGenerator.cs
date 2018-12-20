@@ -17,10 +17,10 @@ public class EnemiesGenerator : MonoBehaviour {
 		
 	}
 
-    public void Pop(string enemyId, float speed)
+    public void Pop(string enemyId, float time)
     {
         var enemy = GetEnemy(enemyId);
-        enemy.Pop(speed, transform.position);
+        enemy.Pop(time, transform.position);
     }
 
     Enemy GetEnemy(string enemyId)
@@ -33,13 +33,21 @@ public class EnemiesGenerator : MonoBehaviour {
                 return existing;
             }
         }
+        else
+        {
+            Enemies[enemyId] = new List<Enemy>();
+        }
 
         var data = manager.EnemiesDataList.FirstOrDefault(x => x.Id == enemyId);
 
         GameObject go = Instantiate(data.Prefab);
         go.transform.SetParent(transform);
 
-        return go.GetComponent<Enemy>();
+        var enemy = go.GetComponent<Enemy>();
+        
+        Enemies[enemyId].Add(enemy);
+
+        return enemy;
     }
 
 }
