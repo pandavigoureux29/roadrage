@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Enemy : MonoBehaviour {
 
+    public string Id { get; set; }
+
+    public float ErrorOffsetMs = 150;
+
     public GameObject SpriteObject;
+    public Animator animator;
     
     public enum State { DEAD, MOVING, SHOT }
     public State CurrentState = State.DEAD;
@@ -17,6 +23,8 @@ public class Enemy : MonoBehaviour {
     protected Vector3 m_startPos;
     protected float m_startTime;
     protected float m_targetTime;
+
+    public EventHandler<EventArgs> OnEnemyDead;
 
     // Use this for initialization
     void Start () {
@@ -39,8 +47,6 @@ public class Enemy : MonoBehaviour {
     void Moving()
     {
         var Y = ComputePosition();
-        /*var moveVector = new Vector2(0, -currentSpeed * Time.deltaTime);
-        transform.Translate(moveVector);*/
 
         var newPos = transform.position;
         newPos.y = Y;
@@ -48,13 +54,18 @@ public class Enemy : MonoBehaviour {
 
         if(transform.position.y <= -6.0f)
         {
-            CurrentState = State.DEAD;
+            //Die();
         }
     }
 
     void Dying()
     {
-
+    }
+    
+    void Die()
+    {
+        OnEnemyDead?.Invoke(this, null);
+        CurrentState = State.DEAD;
     }
 
     public void Pop(float timeTarget, Vector2 position)
@@ -65,7 +76,20 @@ public class Enemy : MonoBehaviour {
         m_startTime = (float) GameplayManager.instance.MusicTimeElapsedMs;
         m_targetTime = timeTarget;
     }
+    
+    public bool IsHit
+    {
+        get
+        {
+            var time = (GameplayManager.instance.MusicTimeElapsedMs);
+            return time > m_targetTime - ErrorOffsetMs && time < m_targetTime + ErrorOffsetMs;
+        }
+    }
 
+    public void Hit()
+    {
+        CurrentState = State.SHOT;
+    }
 
     protected void UpdateSpeed()
     {

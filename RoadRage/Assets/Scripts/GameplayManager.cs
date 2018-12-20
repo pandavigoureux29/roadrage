@@ -38,11 +38,11 @@ public class GameplayManager : MonoBehaviour {
 
     IEnumerator PopCouroutine()
     {
-        while (true)
-        {
+        /*while (true)
+        {*/
             yield return new WaitForSeconds(1);
             LeftSide.Generator.Pop("schoolgirl", MusicTimeElapsedMs + 2000);
-        }
+        //}
     }
 
     public void OnClick(bool left)
