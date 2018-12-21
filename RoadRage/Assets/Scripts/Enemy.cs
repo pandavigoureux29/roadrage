@@ -54,22 +54,30 @@ public class Enemy : MonoBehaviour {
 
         if(transform.position.y <= -6.0f)
         {
-            //Die();
+            Die();
         }
     }
 
     void Dying()
     {
+        var t = animator.GetCurrentAnimatorClipInfo(0);
+        var inShotAnim = t[0].clip.name.Contains("shot");
+        if (inShotAnim && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.8f)
+        {
+            Die();
+        }
     }
     
     void Die()
     {
         OnEnemyDead?.Invoke(this, null);
         CurrentState = State.DEAD;
+        gameObject.SetActive(false);
     }
 
     public void Pop(float timeTarget, Vector2 position)
     {
+        gameObject.SetActive(true);
         transform.position = position;
         CurrentState = State.MOVING;
         m_startPos = position;
@@ -86,9 +94,10 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    public void Hit()
+    public void Hit(bool left)
     {
         CurrentState = State.SHOT;
+        animator.SetTrigger(left ? "shotleft" : "shotright");
     }
 
     protected void UpdateSpeed()

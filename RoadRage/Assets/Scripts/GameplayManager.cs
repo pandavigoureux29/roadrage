@@ -18,6 +18,7 @@ public class GameplayManager : MonoBehaviour {
     public float RoadSpeedMultiplier = 0.09f;
 
     public DateTime BeginTime;
+    public float TotalTime = 0;
 
     private void Awake()
     {
@@ -33,22 +34,27 @@ public class GameplayManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        TotalTime += Time.deltaTime;
 	}
 
     IEnumerator PopCouroutine()
     {
-        /*while (true)
-        {*/
+        while (true)
+        {
             yield return new WaitForSeconds(1);
             LeftSide.Generator.Pop("schoolgirl", MusicTimeElapsedMs + 2000);
-        //}
+        }
     }
 
     public void OnClick(bool left)
     {
         var side = left ? LeftSide : RightSide;
         side.BlinkAnimation.Play();
+        var list = side.Generator.OnClick();
+        foreach (var enemyHit in list)
+        {
+            enemyHit.Hit(left);
+        }
     }
 
     public float RoadLength
@@ -63,7 +69,8 @@ public class GameplayManager : MonoBehaviour {
     {
         get
         {
-            return (float) (DateTime.UtcNow - BeginTime).TotalMilliseconds;
+            return TotalTime * 1000;
+            //return (float) (DateTime.UtcNow - BeginTime).TotalMilliseconds;
         }
     }
 
