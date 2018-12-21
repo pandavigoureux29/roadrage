@@ -49,11 +49,17 @@ public class GameplayManager : MonoBehaviour {
     public void OnClick(bool left)
     {
         var side = left ? LeftSide : RightSide;
-        side.BlinkAnimation.Play();
+
         var list = side.Generator.OnClick();
         foreach (var enemyHit in list)
         {
             enemyHit.Hit(left);
+        }
+
+        if (list.Count > 0)
+        {
+            side.BlinkAnimation.Play();
+            side.FireAnimator.SetTrigger("shoot");
         }
     }
 
