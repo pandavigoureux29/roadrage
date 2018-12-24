@@ -17,6 +17,9 @@ public class GameplayManager : MonoBehaviour {
     public float Speed = 2;
     public float RoadSpeedMultiplier = 0.09f;
 
+    public float TimeBeginOffset;
+    public float TimeBeatOffset;
+
     public DateTime BeginTime;
     public float TotalTime = 0;
 
@@ -41,8 +44,18 @@ public class GameplayManager : MonoBehaviour {
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
-            LeftSide.Generator.Pop("schoolgirl", MusicTimeElapsedMs + 2000);
+            var time = TimeBeatOffset;
+            yield return new WaitForSeconds(TimeBeatOffset);
+
+            var rSide = UnityEngine.Random.Range(0, 100);
+            if(rSide > 50)
+            {
+                LeftSide.Generator.Pop("schoolgirl", MusicTimeElapsedMs + 2000);
+            }
+            else
+            {
+                RightSide.Generator.Pop("schoolgirl", MusicTimeElapsedMs + 2000);
+            }
         }
     }
 
@@ -60,6 +73,7 @@ public class GameplayManager : MonoBehaviour {
         {
             side.BlinkAnimation.Play();
             side.FireAnimator.SetTrigger("shoot");
+            side.FireAnimator.GetComponent<AudioSource>().Play();
         }
     }
 
